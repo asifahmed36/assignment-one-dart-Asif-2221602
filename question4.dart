@@ -32,14 +32,21 @@ abstract class Vehicle {
   // Concrete method
   void displayInfo() {
     // TODO: Display vehicle information
+<<<<<<< HEAD
     print("Vehicle Info: $year $brand $model");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   // Add a method to calculate vehicle age (current year - vehicle year)
   int calculateAge() {
     // TODO: Calculate and return vehicle age
+<<<<<<< HEAD
     int currentYear = 2026; // Based on current project timeline context
     return currentYear - year;
+=======
+    return 0;
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
@@ -56,19 +63,28 @@ class Car extends Vehicle {
   @override
   void start() {
     // TODO: Implement car start method
+<<<<<<< HEAD
     print("Starting the car engine...");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   void stop() {
     // TODO: Implement car stop method
+<<<<<<< HEAD
     print("Stopping the car engine...");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   void displayInfo() {
     // TODO: Override to show car-specific info as shown in expected output
+<<<<<<< HEAD
     print("Vehicle Info: $year $brand $model ($numberOfDoors doors)");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
@@ -84,25 +100,35 @@ class Motorcycle extends Vehicle {
   @override
   void start() {
     // TODO: Implement motorcycle start method
+<<<<<<< HEAD
     print("Starting the motorcycle engine...");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   void stop() {
     // TODO: Implement motorcycle stop method
+<<<<<<< HEAD
     print("Stopping the motorcycle engine...");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   void displayInfo() {
     // TODO: Override to show motorcycle-specific info as shown in expected output
+<<<<<<< HEAD
     print("Vehicle Info: $year $brand $model (Has windshield: $hasWindshield)");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
 void main() {
   // 3. Create a list of vehicles and demonstrate polymorphism by calling start(), stop(), and displayInfo() on each vehicle
   // TODO: Create a list containing one Car and one Motorcycle
+<<<<<<< HEAD
   List<Vehicle> vehicles = [
     Car("Toyota", "Camry", 2020, 4),
     Motorcycle("Honda", "CBR", 2021, true),
@@ -119,4 +145,10 @@ void main() {
   // TODO: Print the age of each vehicle using calculateAge()
   print("Car age: ${vehicles[0].calculateAge()} years");
   print("Motorcycle age: ${vehicles[1].calculateAge()} years");
+=======
+
+  // TODO: Loop through the list and call displayInfo(), start(), and stop()
+
+  // TODO: Print the age of each vehicle using calculateAge()
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 }

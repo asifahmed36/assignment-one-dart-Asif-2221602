@@ -14,13 +14,18 @@ import 'dart:math';
 void main() {
   // 1. Create a List<String> of student names: ["Alice", "Bob", "Charlie", "Diana", "Eve"]
   // TODO: Create the student names list
+<<<<<<< HEAD
   List<String> studentNames = ["alice", "Bob", "Charlie", "Diana", "Eve"];
+=======
+  List<String> studentNames = [];
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 
   // 2. Create a Map<String, int> to store student scores
   // TODO: Create the scores map
   Map<String, int> studentScores = {};
 
   // 3. Use a for loop to assign random scores (60-100) to each student
+<<<<<<< HEAD
   final random = Random();
   for (String student in studentNames) {
     studentScores[student] = 60 + random.nextInt(41);
@@ -30,6 +35,9 @@ void main() {
     int score = random.nextInt(41) + 60; // Random score between 60 and 100
     studentScores[student] = score;
   }
+=======
+  // TODO: Implement the for loop to assign random scores
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 
   // 4. Find and display:
   //    - The student with the highest score
@@ -37,6 +45,7 @@ void main() {
   //    - The average score of all students
   // TODO: Implement the logic to find highest, lowest, and average scores
   String highestStudent = "";
+<<<<<<< HEAD
   int highestScore = -1;
   String lowestStudent = "";
   int lowestScore = 101;
@@ -59,6 +68,15 @@ void main() {
     }
   }
   averageScore = totalScore / studentNames.length;
+=======
+  int highestScore = 0;
+  String lowestStudent = "";
+  int lowestScore = 100;
+  double averageScore = 0.0;
+
+  // TODO: Add your logic here
+
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   print("Student Scores: $studentScores");
   print("Highest Score: $highestStudent with $highestScore");
   print("Lowest Score: $lowestStudent with $lowestScore");
@@ -75,7 +93,13 @@ void main() {
     String category = "";
 
     // TODO: Add your switch statement here
-    switch (score) {
+<<<<<<< HEAD
+    switch (expression) {
+      case value:
+        
+        break;
+      default:
+    } (score) {
       case >= 90:
         category = "Excellent";
         break;
@@ -88,6 +112,8 @@ void main() {
       default:
         category = "Needs Improvement";
     }
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 
     print("$student: $score ($category)");
   }

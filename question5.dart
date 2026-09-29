@@ -21,12 +21,19 @@
 mixin Payable {
   double calculateSalary(double baseSalary, double bonus) {
     // TODO: Calculate total salary (base + bonus)
+<<<<<<< HEAD
     return baseSalary + bonus;
+=======
+    return 0.0;
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   void processPayment(double amount) {
     // TODO: Process payment and print "Payment processed: <amount>"
+<<<<<<< HEAD
     print("Payment processed: $amount");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
@@ -35,7 +42,11 @@ mixin Payable {
 mixin Reportable {
   String generateReport(String employeeName, String department) {
     // TODO: Generate and return report string: "Report: Monthly report for <name> in <department> department"
+<<<<<<< HEAD
     return "Report: Monthly report for $employeeName in $department department";
+=======
+    return "";
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
@@ -71,20 +82,31 @@ class Manager extends Employee with Payable, Reportable {
   @override
   String getJobTitle() {
     // TODO: Return manager job title
+<<<<<<< HEAD
     return "Manager";
+=======
+    return "";
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   double getBaseSalary() {
     // TODO: Return manager base salary
+<<<<<<< HEAD
     return 8000.0;
+=======
+    return 0.0;
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   void displayInfo() {
     // TODO: Override to show manager-specific info as shown in expected output
+<<<<<<< HEAD
     print(
         "Manager: $name (ID: $id, Department: $department, Team Size: $teamSize)");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
@@ -100,20 +122,31 @@ class Developer extends Employee with Payable {
   @override
   String getJobTitle() {
     // TODO: Return developer job title
+<<<<<<< HEAD
     return "Senior Developer";
+=======
+    return "";
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   double getBaseSalary() {
     // TODO: Return developer base salary
+<<<<<<< HEAD
     return 6000.0;
+=======
+    return 0.0;
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 
   @override
   void displayInfo() {
     // TODO: Override to show developer-specific info as shown in expected output
+<<<<<<< HEAD
     print(
         "Developer: $name (ID: $id, Department: $department, Language: $programmingLanguage)");
+=======
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
   }
 }
 
@@ -125,6 +158,7 @@ void main() {
   //    - Display all employee information
 
   // TODO: Create one Manager and one Developer with the details shown in expected output
+<<<<<<< HEAD
   Manager manager = Manager("John Smith", "M001", "IT", 5);
   Developer developer = Developer("Alice Johnson", "D001", "IT", "Dart");
 
@@ -149,4 +183,12 @@ void main() {
       developer.calculateSalary(developer.getBaseSalary(), 500.0);
   print("Calculated Salary: $developerSalary");
   developer.processPayment(developerSalary);
+=======
+
+  // TODO: Demonstrate salary calculation and payment processing for both
+
+  // TODO: Generate and print report for the Manager
+
+  // TODO: Display information for both employees
+>>>>>>> 31f2d4645693de7894bfaf6c722400cc277e3b4b
 }
